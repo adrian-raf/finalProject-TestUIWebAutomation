@@ -5,7 +5,7 @@ describe('login test customer', () => {
     );
   });
 
-  it('Login customer account as Hermoine Granger', () => {
+  it('Ensure login customer account as Hermoine Granger success', () => {
     cy.get('[ng-click ="customer()"]').click();
     cy.url().should(
       'eq',
@@ -96,7 +96,7 @@ describe('login test customer', () => {
     cy.get('[ng-click="byebye()"]').click();
   });
 
-  it('Login customer account as Harry Potter', () => {
+  it('Ensure login customer account as Harry Potter success', () => {
     cy.get('[ng-click ="customer()"]').click();
     cy.url().should(
       'eq',
@@ -120,6 +120,6 @@ describe('login test customer', () => {
 
     cy.get('[ng-click="transactions()"]').click();
 
-    cy.get('[ng-click="back()"]').click();
+    // cy.get('[ng-click="back()"]').click();
   });
 });
