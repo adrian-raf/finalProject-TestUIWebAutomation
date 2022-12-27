@@ -93,7 +93,7 @@ describe('login test customer', () => {
     // check transaction
     cy.get('[ng-click="transactions()"]').click();
     // logout;
-    cy.get('[ng-click="byebye()"]').click();
+    cy.get('.logout').click();
   });
 
   it('Ensure login customer account as Harry Potter success', () => {
@@ -120,7 +120,7 @@ describe('login test customer', () => {
     //check transaction
     cy.get('[ng-click="transactions()"]').click();
     // logout
-    cy.get('ng-click="byebye()"').click();
+    cy.get('.logout').click();
   });
 
   it('Ensure login customer account as Ron Weasly success', () => {
@@ -147,7 +147,7 @@ describe('login test customer', () => {
     //check transaction
     cy.get('[ng-click="transactions()"]').click();
     // logout
-    cy.get('ng-click="byebye()"').click();
+    cy.get('.logout').click();
   });
 
   it('Ensure login customer account as Albus Dumbledore success', () => {
@@ -174,7 +174,7 @@ describe('login test customer', () => {
     //check transaction
     cy.get('[ng-click="transactions()"]').click();
     // logout
-    cy.get('ng-click="byebye()"').click();
+    cy.get('.logout').click();
   });
 
   it('Ensure login customer account as Neville Longbottom success', () => {
@@ -201,6 +201,6 @@ describe('login test customer', () => {
     //check transaction
     cy.get('[ng-click="transactions()"]').click();
     // logout
-    cy.get('ng-click="byebye()"').click();
+    cy.get('.logout').click();
   });
 });
